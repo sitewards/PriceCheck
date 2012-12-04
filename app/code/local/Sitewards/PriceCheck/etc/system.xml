@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<sections>
+		<pricecheck_config translate="label comment" module="pricecheck">
+			<tab>catalog</tab>
+			<label>Sitewards Price Check</label>
+			<frontend_type>text</frontend_type>
+			<sort_order>202</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<pricecheck_group translate="label" module="pricecheck">
+					<label>Sitewards Price Check</label>
+					<sort_order>768</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<disable_ext translate="label" module="pricecheck">
+							<label>Enable Sitewards Price Check</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</disable_ext>
+						<product_identifier_name translate="label" module="pricecheck">
+							<label>Product Identifier</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[Attribute on which to identify your products]]></comment>
+						</product_identifier_name>
+						<customer_identifier_name translate="label" module="pricecheck">
+							<label>Customer Identifier</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[Attribute on which to identify your customers]]></comment>
+						</customer_identifier_name>
+						<helper_name translate="label" module="pricecheck">
+							<label>Helper Name</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[Allows you to specify a custom helper class outside of the pricecheck extension]]></comment>
+						</helper_name>
+					</fields>
+				</pricecheck_group>
+			</groups>
+		</pricecheck_config>
+	</sections>
+</config>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Sitewards_PriceCheck>
+			<version>1.0.0</version>
+		</Sitewards_PriceCheck>
+	</modules>
+
+	<default>
+		<pricecheck_config>
+			<pricecheck_group>
+				<product_identifier_name>entity_id</product_identifier_name>
+				<customer_identifier_name>entity_id</customer_identifier_name>
+				<disable_ext>0</disable_ext>
+				<helper_name>pricecheck</helper_name>
+			</pricecheck_group>
+		</pricecheck_config>
+	</default>
+
+	<global>
+		<models>
+			<catalog>
+				<rewrite>
+					<product_type_price>Sitewards_PriceCheck_Model_Price</product_type_price>
+				</rewrite>
+			</catalog>
+		</models>
+		<helpers>
+			<pricecheck>
+				<class>Sitewards_PriceCheck_Helper</class>
+			</pricecheck>
+		</helpers>
+	</global>
+
+	<adminhtml>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<catalog>
+							<children>
+								<pricecheck_adminform>
+									<title>Configuration</title>
+								</pricecheck_adminform>
+							</children>
+						</catalog>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<pricecheck_config>
+											<title>Sitewards Price Check</title>
+										</pricecheck_config>
+									</children>
+								</config>
+							</children>
+						</system>
+						<catalog>
+							<children>
+								<pricecheck_config translate="title">
+									<title>Sitewards Price Check</title>
+									<sort_order>45</sort_order>
+								</pricecheck_config>
+							</children>
+						</catalog>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</adminhtml>
+</config>

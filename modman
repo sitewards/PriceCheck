@@ -1,2 +1,3 @@
-app\code\local\Sitewards\PriceCheck
-etc\modules\Sitewards_PriceCheck.xml etc\modules\Sitewards_PriceCheck.xml
+/README.md /README.md
+/app/code/local/Sitewards/PriceCheck /app/code/local/Sitewards/PriceCheck
+/etc/modules/Sitewards_PriceCheck.xml /etc/modules/Sitewards_PriceCheck.xml

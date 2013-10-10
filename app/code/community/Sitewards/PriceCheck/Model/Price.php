@@ -3,10 +3,9 @@
  *
  * @category	Mage
  * @package		Sitewards_PriceCheck
- * @copyright	Copyright (c) 2011 Sitewards GmbH. (http://www.sitewards.com)
+ * @copyright	Copyright (c) 2013 Sitewards GmbH. (http://www.sitewards.com)
  * @license		OSL
  * @version		1.0.0
- * @author		David Manners <david.manners@sitewards.com>
  *
  * This class is used to disable Magento´s default Pricing calculations
  */

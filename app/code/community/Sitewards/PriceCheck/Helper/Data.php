@@ -7,10 +7,10 @@
  * getGroupCode,
  * getPriceFromCustomer,
  * getPackingInfo
- * 
+ *
  * @category	Mage
  * @package		Sitewards_StockCheck
- * @copyright	Copyright (c) 2011 Sitewards GmbH. (http://www.sitewards.com)
+ * @copyright	Copyright (c) 2013 Sitewards GmbH. (http://www.sitewards.com)
  * @license		OSL
  * @version		1.0.0
  */
@@ -29,7 +29,7 @@ class Sitewards_PriceCheck_Helper_Data extends Mage_Core_Helper_Abstract {
 	 * @return	float the best price from the quantity provided
 	 */
 	public function getBestPrice($intQuantity, $arrPrices, $fltProductPrice) {
-		Mage::throwException('PriceCheck extension not correctly setup. Please complete the function getBestPrice in the helper '.get_class()); 
+		Mage::throwException('PriceCheck extension not correctly setup. Please complete the function getBestPrice in the helper '.get_class());
 	}
 
 	/**
@@ -38,7 +38,7 @@ class Sitewards_PriceCheck_Helper_Data extends Mage_Core_Helper_Abstract {
 	 * @return string which is a unique identifier for a customer group in your system
 	 */
 	public function getGroupCode($intGroupId) {
-		Mage::throwException('PriceCheck extension not correctly setup. Please complete the function getGroupCode in the helper '.get_class()); 
+		Mage::throwException('PriceCheck extension not correctly setup. Please complete the function getGroupCode in the helper '.get_class());
 	}
 
 	/**
@@ -55,7 +55,7 @@ class Sitewards_PriceCheck_Helper_Data extends Mage_Core_Helper_Abstract {
 	 *	);
 	 */
 	public function getPriceFromCustomer($strProductIdentifier, $intCustomerId, $bolArrayFormat = false) {
-		Mage::throwException('PriceCheck extension not correctly setup. Please complete the function getPriceFromCustomer in the helper '.get_class()); 
+		Mage::throwException('PriceCheck extension not correctly setup. Please complete the function getPriceFromCustomer in the helper '.get_class());
 	}
 
 	/**
@@ -72,6 +72,6 @@ class Sitewards_PriceCheck_Helper_Data extends Mage_Core_Helper_Abstract {
 	 *	);
 	 */
 	public function getPackingInfo($strProductIdentifier, $intCustomerId, $bolForDebug = false) {
-		Mage::throwException('PriceCheck extension not correctly setup. Please complete the function getPackingInfo in the helper '.get_class()); 
+		Mage::throwException('PriceCheck extension not correctly setup. Please complete the function getPackingInfo in the helper '.get_class());
 	}
 }

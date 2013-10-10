@@ -1,2 +1,2 @@
-/app/code/local/Sitewards/PriceCheck /app/code/local/Sitewards/PriceCheck
-/etc/modules/Sitewards_PriceCheck.xml /etc/modules/Sitewards_PriceCheck.xml
+/app/code/community/Sitewards/PriceCheck /app/code/community/Sitewards/PriceCheck
+/app/etc/modules/Sitewards_PriceCheck.xml /app/etc/modules/Sitewards_PriceCheck.xml

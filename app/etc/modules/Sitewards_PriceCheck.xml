@@ -3,7 +3,7 @@
 	<modules>
 		<Sitewards_PriceCheck>
 			<active>true</active>
-			<codePool>local</codePool>
+			<codePool>community</codePool>
 			<depends>
 				<Mage_Catalog />
 			</depends>

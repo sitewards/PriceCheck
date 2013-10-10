@@ -7,7 +7,7 @@
  * @license		OSL
  * @version		1.0.0
  * @author		David Manners <david.manners@sitewards.com>
- * 
+ *
  * This class is used to disable Magento´s default Pricing calculations
  */
 class Sitewards_PriceCheck_Model_Price extends Mage_Catalog_Model_Product_Type_Price
@@ -27,7 +27,7 @@ class Sitewards_PriceCheck_Model_Price extends Mage_Catalog_Model_Product_Type_P
 	/**
 	 *
 	 * @param object $objProduct
-	 * @return float custom price or magento stored price 
+	 * @return float custom price or magento stored price
 	 */
 	public function getPrice($objProduct) {
 		if($this->bolExtensionActive == true) {
@@ -40,13 +40,13 @@ class Sitewards_PriceCheck_Model_Price extends Mage_Catalog_Model_Product_Type_P
 				if(!is_null($fltCustomPrice)) {
 					return $fltCustomPrice;
 				} else {
-					parent::getPrice($objProduct);
+					return parent::getPrice($objProduct);
 				}
 			} else {
-				parent::getPrice($objProduct);
+				return parent::getPrice($objProduct);
 			}
 		} else {
-			parent::getPrice($objProduct);
+			return parent::getPrice($objProduct);
 		}
 	}
 
@@ -54,7 +54,7 @@ class Sitewards_PriceCheck_Model_Price extends Mage_Catalog_Model_Product_Type_P
 	 *
 	 * @param int $intQuantity
 	 * @param object $objProduct
-	 * @return array of tier price information 
+	 * @return array of tier price information
 	 */
 	public function getTierPrice($intQuantity = null, $objProduct) {
 		if($this->bolExtensionActive == true) {
@@ -67,13 +67,13 @@ class Sitewards_PriceCheck_Model_Price extends Mage_Catalog_Model_Product_Type_P
 				if(!is_null($arrPrices)) {
 					return $arrPrices;
 				} else {
-					parent::getTierPrice($intQuantity, $objProduct);
+					return parent::getTierPrice($intQuantity, $objProduct);
 				}
 			} else {
-				parent::getTierPrice($intQuantity, $objProduct);
+				return parent::getTierPrice($intQuantity, $objProduct);
 			}
 		} else {
-			parent::getTierPrice($intQuantity, $objProduct);
+			return parent::getTierPrice($intQuantity, $objProduct);
 		}
 	}
 
@@ -124,7 +124,7 @@ class Sitewards_PriceCheck_Model_Price extends Mage_Catalog_Model_Product_Type_P
 	 * @param int $intCustomerId
 	 * @param int $intGroupId
 	 * @param object $objProduct
-	 * @return array of prices for a product from another source 
+	 * @return array of prices for a product from another source
 	 */
 	protected function _getPricesForGroup($intQuantity, $intCustomerId, $intGroupId, $objProduct) {
 		if(method_exists(Mage::helper($this->strHelperName), 'getPriceFromCustomer') == false) {
@@ -171,7 +171,7 @@ class Sitewards_PriceCheck_Model_Price extends Mage_Catalog_Model_Product_Type_P
 	/**
 	 *
 	 * @param object $objProduct
-	 * @return array of packing unit information for a product based on customer id or group 
+	 * @return array of packing unit information for a product based on customer id or group
 	 */
 	public function getPackingUnitInfo($objProduct) {
 		if($this->bolExtensionActive == true) {
